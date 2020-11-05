@@ -1,8 +1,8 @@
 <template>
   <div id="app">
 
-<!--             :row-selection="{selectedRowKeys: selectedDevices, onChange: onDeviceSelectChange}"-->
     <a-table :columns="columnDefinitions"
+             :row-selection="{selectedRowKeys: selectedDevices, onChange: onDeviceSelectChange}"
              :data-source="items"
              :pagination="false"
              @change="tableChange"
